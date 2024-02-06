@@ -1,0 +1,44 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+
+.card-icons{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.card-icons img{
+    padding-left: 10px;
+}
+
+.card-icons .thumbsdown-img{
+    margin-top: -40px;
+    margin-bottom: -12px;
+    margin-left: -10px;
+}
+.upper-card img{
+    max-height: 5cm;
+    border-top-left-radius: 0.2cm;
+    border-top-right-radius: 0.2cm;
+}
+.lower-card{
+    margin-top: -4px;
+    background-color: #201c1c;
+    max-width: 350px;
+    height: 4cm;
+    border-bottom-left-radius: 0.2cm;
+    border-bottom-right-radius: 0.2cm;
+}
+
+.lowercard-content{
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: large;
+    word-spacing: 3px;
+}
+
+.lowercard-content span{
+    color: green;
+}
