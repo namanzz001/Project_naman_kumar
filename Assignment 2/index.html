@@ -16,27 +16,25 @@
         <h1> Bosscoder Academy</h1>
     </div>
 
-    <!-- <div class="like-box">I like this</div> -->
-
     <img id="like-icon" src="./images/thumbsupimg.png" alt="thumbsup" width="40px">
    </div>
 
    <script>
     const likeImages = document.querySelectorAll('#like-icon');
 
-    // likeImages.forEach((likeImage) =>{
-    //     const likeDialog = likeImage.previousElementSibling;
+    likeImages.forEach((likeImage)=>{
+        let clickCount = 0;
 
-    //     likeImage.addEventListener('mouseover', () =>{
-    //         likeDialog.style.display = 'block';
-    //     });
-
-    //     likeImage.addEventListener('mouseout', () =>{
-    //         likeDialog.style.display = 'none';
-    //     });
-    // });
-
-
+        likeImage.addEventListener('click', ()=>{
+            clickCount++;
+            if(clickCount%2!=0){
+                likeImage.src = 'images/blackthumbsupimg.png';
+            }
+            else{
+                likeImage.src = 'images/thumbsupimg.png';
+            }
+        });
+    });
    </script>
 </body>
 </html>
